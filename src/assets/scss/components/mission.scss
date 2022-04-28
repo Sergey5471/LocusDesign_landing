@@ -1,0 +1,30 @@
+.mission {
+	padding-bottom: 120px;
+
+	&__box {
+		display: flex;
+		gap: 145px;
+	}
+
+	&__title {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 60px;
+		color: #1C2323;
+		padding-bottom: 50px;
+		max-width: 487px;
+	}
+
+	&__text {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 45px;
+		color: #486958;
+		max-width: 708px;
+	}
+
+}

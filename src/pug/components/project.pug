@@ -1,0 +1,24 @@
+include ../mixins/project_item.pug
+
+.project.container 
+	h2.project__title Our project 
+	p.project__subtitle Introducing our first official project
+	.project__box 
+		+project__item({
+			title: 'Project Livingroom',
+			text: 'A simple guide to create the perfect livingroom for . Night Watc works beautifully in a wide gamut of arrangements.',
+			img: './assets/imgs/project1.png'
+		})
+		+project__item({
+			title: 'Project workspace',
+			text: 'A simple guide to create the perfect livingroom for . Night Watc works beautifully in a wide gamut of arrangements.',
+			img: './assets/imgs/project2.png',
+			revers: 'project-item__revers'
+		})
+		+project__item({
+			title: 'Library',
+			text: 'A simple guide to create the perfect livingroom for . Night Watc works beautifully in a wide gamut of arrangements.',
+			img: './assets/imgs/project3.png'
+		})
+		
+			

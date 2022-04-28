@@ -1,0 +1,64 @@
+.testimonials {
+	padding-bottom: 240px;
+
+	&__title {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 70px;
+		line-height: 105px;
+		text-align: center;
+		color: #1C2323;
+		padding-bottom: 20px;
+	}
+
+	&__brand {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-bottom: 60px;
+	}
+
+	&__box {
+		display: flex;
+	}
+
+	&__item {
+		background: #CCF0E6;
+		padding: 50px 107px 120px 135px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 123px 117px;
+		
+	}
+
+	&__slogan {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 38px;
+		color: #58A9A5;
+	}
+
+	&__slogan span {
+		font-weight: 800;
+		font-size: 70px;
+		line-height: 105px;
+	}
+
+	&__text {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 38px;
+		color: #486958;
+		grid-column: 1 / 4;
+
+	}
+
+	&__text span {
+		color: #58A9A5;
+	}
+}

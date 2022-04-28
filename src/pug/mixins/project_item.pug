@@ -1,0 +1,6 @@
+mixin project__item(args={})
+	.project__item(class=args.revers) 
+		.project-item__info
+			h3.project-item__title=args.title
+			p.project-item__text=args.text
+		img.project-item__img(src=args.img, alt=args.title)
