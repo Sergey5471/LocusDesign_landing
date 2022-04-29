@@ -14,12 +14,20 @@
 	&__link {
 		font-family: 'Poppins';
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 25px;
 		line-height: 38px;
-		color: #58A9A5;
+		color: #404242;
 		text-decoration: none;
+		transition: 0.3s;
 
+	}
+
+	&__link:hover {
+		font-weight: 700;
+		color: #58A9A5;
+		text-decoration: underline;
+		text-decoration-color: #FEC62D;
 	}
 
 	&__btn {
@@ -33,6 +41,10 @@
 		border-radius: 15px;
 		padding: 21px 87px;
 		border: none;
+	}
+
+	&__btn:hover {
+		background: #428f8b;
 	}
 
 }

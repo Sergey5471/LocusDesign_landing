@@ -27,6 +27,7 @@
 		font-size: 25px;
 		line-height: 38px;
 		color: #486958;
+		padding-bottom: 37px;
 
 	}
 
@@ -129,6 +130,9 @@
 		padding: 21px 73px;
 		border: none;
 		
-		
+	}
+
+	&__btn:hover {
+		background: #428f8b;
 	}
 }

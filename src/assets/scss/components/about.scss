@@ -52,8 +52,7 @@
 		color: #486958;
 		position: relative;
 	}
-	&__video::before {
-		content: "";
+	&__btn {
 		background-image: url(../imgs/play.png);
 		background-repeat: no-repeat;
 		display: block;
@@ -63,8 +62,11 @@
 		top: -34px;
 		left: -165px;
 		border-radius: 65px;
-		border: 14px solid rgba(255, 255, 255, 0.4);
-		transition: 0.3s;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		// transition: 0.3s;
 	}
+	
+	
+		
 	
 }
