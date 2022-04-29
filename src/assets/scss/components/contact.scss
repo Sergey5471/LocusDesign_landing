@@ -29,6 +29,30 @@
 		color: #486958;
 
 	}
+
+	&__rows {
+		border: 1px solid #58A9A5;
+		display: block;
+		width: 135px;
+		height: 1px;
+		// margin: 0 auto;
+		margin-bottom: 110px;
+		position: relative;
+	}
+	&__rows::after {
+		content: "";
+		border: 1px solid #58A9A5; 
+		background-color: #58A9A5;
+		display: block;
+		width: 133px;
+		// height: 2px;
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		transform: translate(-50%);
+		
+	}
+
 	&__form {
 		border: 1px solid #486958;
 		padding: 0 52px;
