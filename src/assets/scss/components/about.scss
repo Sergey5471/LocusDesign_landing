@@ -52,19 +52,40 @@
 		color: #486958;
 		position: relative;
 	}
+	
+	&__button {
+		position: absolute;
+		top: -45px;
+		left: -175px;
+		border-radius: 65px;
+		border: 14px solid rgba(255, 255, 255, 0.4);
+		
+		
+		
+	}
 	&__btn {
-		background-image: url(../imgs/play.png);
-		background-repeat: no-repeat;
-		display: block;
 		width: 100px;
 		height: 100px;
-		position: absolute;
-		top: -34px;
-		left: -165px;
+		display: block;
 		border-radius: 65px;
-		border: 1px solid rgba(255, 255, 255, 0.4);
-		// transition: 0.3s;
+		background: #ffffff;
+		border: none;
+		
+		
+		
 	}
+	&__btn:hover {
+		path {
+			fill: #000000;
+			transition: 0.3s;
+		}
+	}
+
+	&__btn svg  {
+		margin-left: 15px;
+	}
+	
+
 	
 	
 		
