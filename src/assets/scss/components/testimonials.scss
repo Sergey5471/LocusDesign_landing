@@ -1,12 +1,12 @@
 .testimonials {
-	padding-bottom: 240px;
+	margin-bottom: 240px;
 
 	&__title {
 		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 800;
 		font-size: 70px;
-		line-height: 105px;
+		line-height: 1.5;
 		text-align: center;
 		color: #1C2323;
 		padding-bottom: 20px;
@@ -37,14 +37,14 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: 25px;
-		line-height: 38px;
+		line-height: 1.5;
 		color: #58A9A5;
 	}
 
 	&__slogan span {
 		font-weight: 800;
 		font-size: 70px;
-		line-height: 105px;
+		line-height: 1.5;
 	}
 
 	&__text {
@@ -52,7 +52,7 @@
 		font-style: normal;
 		font-weight: 500;
 		font-size: 25px;
-		line-height: 38px;
+		line-height: 1.5;
 		color: #486958;
 		grid-column: 1 / 4;
 
@@ -63,5 +63,173 @@
 		padding-top: 40px;
 		color: #58A9A5;
 		font-style: italic;
+	}
+}
+
+@media (max-width:1600.75px) {
+	.testimonials {
+		margin-bottom: 200px;
+	
+		&__title {
+			font-size: 60px;
+			padding-bottom: 20px;
+		}
+		
+		&__brand {
+			padding-bottom: 50px;
+
+			// &__img {
+			// 	max-width: 23vw;
+			// }
+		}
+	
+			
+		&__item {
+			padding-top: calc(10px + (50 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-right: calc(10px + (107 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-bottom: calc(10px + (120 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-left: calc(10px + (135 - 10) * ((100vw - 320px) / (1550 - 320)));
+			gap: 25px 40px;
+			
+		}
+	
+		&__slogan {
+			font-size: calc(12px + (25 - 12) * ((100vw - 320px) / (1550 - 320)));
+								
+		}
+	
+		&__slogan span {
+			font-size: calc(14px + (70 - 14) * ((100vw - 320px) / (1550 - 320)));
+			
+		}
+	
+		&__text {
+			font-size: calc(12px + (25 - 12) * ((100vw - 320px) / (1550 - 320)));
+		
+		}
+	
+		&__text span {
+			padding-top: 40px;
+		
+		}
+	}
+}
+
+@media (max-width:1439.75px) {
+	.testimonials {
+		margin-bottom: 150px;
+	
+		&__title {
+			font-size: 45px;
+			padding-bottom: 0;
+		}
+		
+		&__brand {
+			padding-bottom: 10px;
+	
+		}
+
+		&__brand img {
+			width: 20vw;
+		}
+
+		&__img {
+			max-width: 450px;
+		}
+			
+		&__item {
+			gap: 25px 40px;
+			
+
+		}
+		&__text span {
+			padding-top: 40px;
+		
+		}
+	}
+}
+
+@media (max-width:1023.75px) {
+	.testimonials {
+		margin-bottom: 100px;
+	
+		&__title {
+			font-size: 35px;
+			padding-bottom: 0;
+		}
+		
+		&__brand {
+			padding-bottom: 10px;
+	
+		}
+
+		&__brand img {
+			width: 20vw;
+		}
+
+		&__img {
+			max-width: 43vw;
+		}
+			
+		&__item {
+			gap: 15px 20px;
+			
+
+		}
+		&__text span {
+			padding-top: 20px;
+		
+		}
+	}
+
+}
+@media (max-width:767.75px) {
+	.testimonials {
+		margin-bottom: 60px;
+	
+		&__title {
+			font-size: 25px;
+			padding-bottom: 0;
+		}
+		
+		&__brand {
+			padding-bottom: 10px;
+			flex-wrap: wrap;
+			gap: 10px;
+	
+		}
+		
+		&__brand img {
+			width: 40%;
+		}
+		&__box {
+			flex-wrap: wrap;
+		}
+		&__img {
+			max-width: 100%;
+			border-radius: 10px 10px 0 0;
+		}
+			
+		&__item {
+			gap: 15px 20px;
+			border-radius: 0 0 10px 10px;
+			
+
+		}
+		&__text span {
+			padding-top: 20px;
+		
+		}
+	}
+}
+
+@media (max-width:424.75px) {
+	.container {
+		max-width: 390px;
+	}
+}
+@media (max-width:319.75px) {
+	.container {
+		max-width: 290px;
 	}
 }

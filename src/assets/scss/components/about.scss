@@ -1,5 +1,5 @@
 .about {
-	padding-bottom: 150px;
+	margin-bottom: 150px;
 	&__title {
 		font-family: 'Poppins';
 		font-style: normal;
@@ -26,11 +26,17 @@
 	&__box {
 		display: flex;
 	}
-
+	&__img {
+		max-width: 62.5%;
+		width: 100%;
+	}
 	&__info {
+		width: 36.5%;
 		background: #CCF0E6;
 		border-radius: 0px 10px 10px 0px;
 		padding: 70px 106px 89px 115px;
+
+
 	}
 
 	&__text {
@@ -38,7 +44,7 @@
 		font-style: normal;
 		font-weight: 500;
 		font-size: 20px;
-		line-height: 30px;
+		line-height: 1.5;
 		color: #486958;
 		padding-bottom: 41px;
 	}
@@ -48,7 +54,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: 20px;
-		line-height: 30px;
+		line-height: 1.5;
 		color: #486958;
 		position: relative;
 	}
@@ -60,8 +66,6 @@
 		border-radius: 65px;
 		border: 14px solid rgba(255, 255, 255, 0.4);
 		
-		
-		
 	}
 	&__btn {
 		width: 100px;
@@ -71,8 +75,6 @@
 		background: #ffffff;
 		border: none;
 		
-		
-		
 	}
 	&__btn:hover {
 		path {
@@ -80,14 +82,165 @@
 			transition: 0.3s;
 		}
 	}
-
 	&__btn svg  {
 		margin-left: 15px;
 	}
 	
+}
 
+@media (max-width:1600.75px) {
+	.about {
+		margin-bottom: 100px;
+		&__title {
+			font-size: 60px;
+			line-height: 90px;
+			
+		}
 	
-	
+		&__subtitle {
+			font-size: 25px;
+			line-height: 37px;
+		}
+		&__img {
+			max-width: 62.5%;
+		}
+		&__info {
+			background: #CCF0E6;
+			border-radius: 0px 10px 10px 0px;
+			padding-top: calc(10px + (70 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-right: calc(15px + (106 - 15) * ((100vw - 320px) / (1550 - 320)));
+			padding-bottom: calc(10px + (89 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-left: calc(15px + (115 - 15) * ((100vw - 320px) / (1550 - 320)));
+		}
+
+		&__text {
+			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1550 - 320)));
+			padding-bottom: calc(10px + (41 - 10) * ((100vw - 320px) / (1550 - 320)));
+		}
+		&__video {
+			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1550 - 320)));
+		}
 		
+	}
+}
+
+@media (max-width:1439.75px) {
+	.about {
+		margin-bottom: 100px;
+		&__title {
+			font-size: 45px;
+			line-height: 55px;
+			
+		}
 	
+		&__subtitle {
+			font-size: 20px;
+			line-height: 30px;
+			padding-bottom: 40px;
+		}
+		&__button {
+			top: -26px;
+			left: -110px;
+			border: 10px solid rgba(255, 255, 255, 0.4);
+			
+		}
+		&__btn {
+			width: 60px;
+			height: 60px;
+		
+		}
+		&__btn svg  {
+			width: 20px;
+			margin-left: 10px;
+		}
+		
+	}
+}
+
+@media (max-width:1023.75px) {
+	.about {
+		margin-bottom: 100px;
+		&__title {
+			font-size: 35px;
+			line-height: 40px;
+			padding-bottom: 10px;
+			
+		}
+	
+		&__subtitle {
+			font-size: 16px;
+			line-height: 23px;
+			padding-bottom: 20px;
+		}
+		&__button {
+			top: -30px;
+			left: -91px;
+			border: 8px solid rgba(255, 255, 255, 0.4);
+			
+		}
+		
+		
+	}
+}
+@media (max-width:767.75px) {
+	.about {
+		margin-bottom: 60px;
+		&__title {
+			font-size: 25px;
+			line-height: 1.5;
+			padding-bottom: 10px;
+			
+		}
+	
+		&__subtitle {
+			font-size: 16px;
+			line-height: 1.5;
+			padding-bottom: 20px;
+		}
+
+		&__box {
+			flex-wrap: wrap;
+		}
+		&__img {
+			max-width: 100%;
+			width: 100%;
+			border-radius: 10px;
+		}
+		&__info {
+			max-width: 100%;
+			width: 100%;
+			border-radius: 10px;
+		}
+		&__button {
+			top: -14px;
+			left: 90px;
+			border: 3px solid rgba(255, 255, 255, 0.4);
+			
+		}
+		&__btn {
+			width: 35px;
+			height: 35px;
+		
+		}
+		&__btn svg  {
+			width: 13px;
+			position: relative;
+			bottom: 3px;
+			right: 3px;
+			
+		}
+		
+		
+	}
+}
+
+@media (max-width:424.75px) {
+	.container {
+		max-width: 390px;
+	}
+}
+@media (max-width:319.75px) {
+	.container {
+		max-width: 290px;
+	}
 }

@@ -13,24 +13,26 @@
     <meta name="theme-color" content="#ffffff">
     <title>Locus </title>
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/vendor.min.css">
+    <link rel="stylesheet" href="./assets/css/vendors.min.css">
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body>
     <header class="header container"> 
       <div class="header__logo"> <img class="logo__img" src="./assets/imgs/logo.svg" alt="logo"><span class="logo__text">Locus </span></div>
-      <nav class="header__nav"> <a class="header__link" href="#">Home</a><a class="header__link" href="#">Contact</a><a class="header__link" href="#">Location</a><a class="header__link" href="#">About Us</a></nav>
-      <button class="header__btn">Sigh Up</button>
+      <div class="header__burger" id="burger"><span class="header__close" id="burger-close"></span>
+        <nav class="header__nav"> <a class="header__link" href="#">Home</a><a class="header__link" href="#">Contact</a><a class="header__link" href="#">Location</a><a class="header__link" href="#">About Us</a></nav>
+        <button class="header__btn">Sigh Up</button>
+      </div><span class="header__open" id="burger-open"></span>
     </header>
-    <div class="intro container">
+    <section class="intro container">
       <div class="intro__info"> 
         <h1 class="intro__title">Get the inspiration of interior design here</h1>
         <p class="intro__text">architecture not only about engineering, it even lands to art and aesthetics. With us, you will get a residentical design with an extraordinary touch of art.</p>
         <button class="intro__btn btn">Let’s go</button>
       </div>
       <div class="intro__box"><img class="intro__img" src="./assets/imgs/intro.png" alt="interior"></div>
-    </div>
-    <div class="about container"> 
+    </section>
+    <section class="about container"> 
       <h2 class="about__title">How it works</h2><span class="about__subtitle">Spice up your space even simpler than you think</span>
       <div class="about__box"> <img class="about__img" src="./assets/imgs/aboutimg.png" alt="about">
         <div class="about__info"> 
@@ -44,8 +46,8 @@
             </div></span>
         </div>
       </div>
-    </div>
-    <div class="mission container"> 
+    </section>
+    <section class="mission container"> 
       <div class="mission__box"> 
         <div class="mission__item"> <img class="mission__img" src="./assets/imgs/mission.png" alt="mission"></div>
         <div class="mission__item"> 
@@ -53,8 +55,8 @@
           <p class="mission__text">By applying bacis psychology principles, we are going to explain how perception works and how we can use this understanding to maximise the space that we occupy in our homes.</p>
         </div>
       </div>
-    </div>
-    <div class="project container"> 
+    </section>
+    <section class="project container"> 
       <h2 class="project__title">Our project </h2>
       <p class="project__subtitle">Introducing our first official project</p><span class="project__rows"></span>
       <div class="project__box"> 
@@ -77,8 +79,8 @@
               </div><img class="project-item__img" src="./assets/imgs/project3.png" alt="Library">
             </div>
       </div>
-    </div>
-    <div class="testimonials container">
+    </section>
+    <section class="testimonials container">
       <h3 class="testimonials__title">Testimonial</h3>
       <div class="testimonials__brand"> <img class="brand__img" src="./assets/imgs/brand1.png" alt="brand"><img class="brand__img" src="./assets/imgs/brand2.png" alt="brand"><img class="brand__img" src="./assets/imgs/brand3.png" alt="brand"><img class="brand__img" src="./assets/imgs/brand4.png" alt="brand"></div>
       <div class="testimonials__box"> <img class="testimonials__img" src="./assets/imgs/testimonials.png" alt="">
@@ -89,8 +91,8 @@
           <p class="testimonials__text">"Not able to tell you how happy I am with interior design. Interior design has completely surpassed our expectations. Interior design saved my business. Interior design is worth much more than I paid."<br> <span>- Roscoe</span></p>
         </div>
       </div>
-    </div>
-    <div class="contact container"> 
+    </section>
+    <section class="contact container"> 
       <div class="contact__wrapper">	
         <div class="contact__info"> 
           <h3 class="contact__title">Contact Us</h3>
@@ -109,7 +111,7 @@
           <button class="contact__btn" name="submit">Send now</button>
         </form>
       </div>
-    </div>
+    </section>
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/app.js"> </script>
   </body>

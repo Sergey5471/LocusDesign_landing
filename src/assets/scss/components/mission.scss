@@ -1,5 +1,5 @@
 .mission {
-	padding-bottom: 120px;
+	margin-bottom: 120px;
 
 	&__box {
 		display: flex;
@@ -11,7 +11,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: 40px;
-		line-height: 60px;
+		line-height: 1.5;
 		color: #1C2323;
 		padding-bottom: 50px;
 		max-width: 487px;
@@ -22,9 +22,117 @@
 		font-style: normal;
 		font-weight: 500;
 		font-size: 30px;
-		line-height: 45px;
+		line-height: 1.5;
 		color: #486958;
 		max-width: 708px;
 	}
 
+}
+
+@media (max-width:1600.75px) {
+	.mission {
+		
+	
+		&__box {
+			gap: 135px;
+		}
+	
+		&__title {
+			font-size: 35px;
+			padding-bottom: 50px;
+			max-width: 487px;
+		}
+	
+		&__text {
+			font-size: 25px;
+			max-width: 708px;
+		}
+	
+	}
+}
+
+@media (max-width:1439.75px) {
+	.mission {
+		
+	
+		&__box {
+			gap: 85px;
+		}
+		&__img {
+			max-width: 500px;
+		}
+	
+		&__title {
+			font-size: 30px;
+			padding-bottom: 50px;
+			max-width: 487px;
+		}
+	
+		&__text {
+			font-size: 20px;
+			max-width: 708px;
+		}
+	
+	}
+}
+
+@media (max-width:1023.75px) {
+	.mission {
+		margin-bottom: 100px;
+	
+		&__box {
+			gap: 60px;
+		}
+		&__img {
+			max-width: 400px;
+		}
+	
+		&__title {
+			font-size: 25px;
+			padding-bottom: 30px;
+			max-width: 487px;
+		}
+	
+		&__text {
+			font-size: 18px;
+			max-width: 708px;
+		}
+	
+	}
+}
+@media (max-width:767.75px) {
+	.mission {
+		margin-bottom: 60px;
+	
+		&__box {
+			flex-wrap: wrap-reverse;
+			gap: 20px;
+		}
+		&__img {
+			max-width: 100%;
+		}
+	
+		&__title {
+			font-size: 25px;
+			padding-bottom: 20px;
+			max-width: 487px;
+		}
+	
+		&__text {
+			font-size: 16px;
+			max-width: 708px;
+		}
+	
+	}
+}
+
+@media (max-width:424.75px) {
+	.container {
+		max-width: 390px;
+	}
+}
+@media (max-width:319.75px) {
+	.container {
+		max-width: 290px;
+	}
 }
